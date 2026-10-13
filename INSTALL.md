@@ -15,8 +15,14 @@ Restart Claude Code, then:
 
 ## Claude app (claude.ai)
 
-1. Download [`skills/i-have-dyslexia/SKILL.md`](skills/i-have-dyslexia/SKILL.md).
-2. Go to **Customize → Skills** and add it.
+1. [Download the zip](https://github.com/i-have-dyslexia/i-have-dyslexia/releases/latest/download/i-have-dyslexia-claude-app.zip).
+2. In Claude, go to **Settings → Capabilities → Skills** and upload it.
+
+There are no slash commands in the app. Say these instead:
+
+- "redraw that" or "explain that visually" redraws the last answer.
+- "explain <topic> with pictures" explains a topic visually.
+- "dyslexia mode" turns it on for the chat. Say **"stop dyslexia mode"** to turn it off.
 
 ## Any other AI chat
 

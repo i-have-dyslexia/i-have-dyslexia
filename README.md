@@ -21,6 +21,8 @@ Or copy/paste into any AI coding tool:
 Install the i-have-dyslexia skill from https://github.com/i-have-dyslexia/i-have-dyslexia, refer to the repo's AGENTS.md for instructions.
 ```
 
+In the Claude app: [download the zip](https://github.com/i-have-dyslexia/i-have-dyslexia/releases/latest/download/i-have-dyslexia-claude-app.zip), then upload it in **Settings → Capabilities → Skills**.
+
 Or see [INSTALL.md](INSTALL.md).
 
 ## What it does
