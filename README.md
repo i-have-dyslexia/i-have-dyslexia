@@ -41,6 +41,16 @@ The picture is picked to fit the idea:
 | Amounts | Bar chart |
 | A decision | Yes/no branch |
 
+## How to use
+
+| Type | What happens |
+|---|---|
+| `/i-have-dyslexia explain` | Redraws the **last answer** as visuals. One time. |
+| `/i-have-dyslexia explain <topic>` | Explains **that topic** visually. One time. |
+| `/i-have-dyslexia` | Turns it on for **every answer** in the session. |
+
+Example: `/i-have-dyslexia explain how compound interest works`
+
 ## Before / after
 
 <table>
@@ -81,7 +91,9 @@ The picture is picked to fit the idea:
 
 ## Turn it off
 
-Say **"stop dyslexia mode"**.
+`explain` is one time, so there is nothing to turn off.
+
+For session mode, say **"stop dyslexia mode"**.
 
 ## Why pictures?
 
