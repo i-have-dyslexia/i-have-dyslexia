@@ -1,7 +1,7 @@
 ---
 name: i-have-dyslexia
-description: 'Explain with pictures, not walls of text. Leads with a visual (flow, table, tree, timeline, bars, box diagram) picked to fit the idea, then a few short plain sentences. "/i-have-dyslexia explain" redraws the last answer visually; "/i-have-dyslexia explain <topic>" explains a topic visually; plain "/i-have-dyslexia" turns it on for the session until "stop dyslexia mode".'
-argument-hint: '[explain [topic]]'
+description: 'Explain with pictures, not walls of text. Leads with a visual (flow, table, tree, timeline, bars, box diagram) picked to fit the idea, then a few short plain sentences. Plain "/i-have-dyslexia" redraws the last answer visually; "/i-have-dyslexia <topic>" explains a topic visually; "/i-have-dyslexia on" turns it on for the session until "stop dyslexia mode".'
+argument-hint: '[topic | on]'
 disable-model-invocation: true
 license: MIT
 metadata:
@@ -23,15 +23,17 @@ Read the arguments and pick one:
 
 | Arguments | Do this |
 |---|---|
-| `explain` (nothing after it) | Take your previous answer in this conversation. Redraw it following the rules below: visual first, then short text. Same facts, nothing new added, nothing important dropped. If there is no previous answer, ask what to explain in one line. |
-| `explain <topic>` | Explain `<topic>` following the rules below. |
-| Empty | Turn on session mode (see below). Confirm in one line: "Dyslexia mode on. Say 'stop dyslexia mode' to turn it off." |
+| Empty | Take your previous answer in this conversation. Redraw it following the rules below: visual first, then short text. Same facts, nothing new added, nothing important dropped. If there is no previous answer, ask what to explain in one line. |
+| `on` | Turn on session mode (see below). Confirm in one line: "Dyslexia mode on. Say 'stop dyslexia mode' to turn it off." |
+| Anything else | It is a topic. Explain it following the rules below. |
 
-`explain` is one time only. After that answer, go back to your normal style.
+Drop a leading word `explain` and read what is left. So `explain` alone means Empty, and `explain <topic>` means a topic.
+
+Empty and topic are one time only. After that answer, go back to your normal style.
 
 ## Session mode
 
-Only when called with no arguments: these rules apply to every response for the rest of the session. They do not lapse when the topic changes. If you are unsure whether they still apply, they do.
+Only when called with `on`: these rules apply to every response for the rest of the session. They do not lapse when the topic changes. If you are unsure whether they still apply, they do.
 
 Turn them off only when the reader says "stop dyslexia mode" or "normal mode". Confirm in one line, then return to your default style.
 

@@ -9,9 +9,9 @@ claude plugin install i-have-dyslexia@i-have-dyslexia
 
 Restart Claude Code, then:
 
-- `/i-have-dyslexia explain` redraws the last answer as visuals.
-- `/i-have-dyslexia explain <topic>` explains a topic visually.
-- `/i-have-dyslexia` turns it on for the whole session. Say **"stop dyslexia mode"** to turn it off.
+- `/i-have-dyslexia` redraws the last answer as visuals.
+- `/i-have-dyslexia <topic>` explains a topic visually.
+- `/i-have-dyslexia on` turns it on for the whole session. Say **"stop dyslexia mode"** to turn it off.
 
 ## Claude app (claude.ai)
 

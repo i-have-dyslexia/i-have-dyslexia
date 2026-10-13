@@ -46,11 +46,11 @@ The picture is picked to fit the idea:
 
 | Type | What happens |
 |---|---|
-| `/i-have-dyslexia explain` | Redraws the **last answer** as visuals. One time. |
-| `/i-have-dyslexia explain <topic>` | Explains **that topic** visually. One time. |
-| `/i-have-dyslexia` | Turns it on for **every answer** in the session. |
+| `/i-have-dyslexia` | Redraws the **last answer** as visuals. One time. |
+| `/i-have-dyslexia <topic>` | Explains **that topic** visually. One time. |
+| `/i-have-dyslexia on` | Turns it on for **every answer** in the session. |
 
-Example: `/i-have-dyslexia explain how compound interest works`
+Example: `/i-have-dyslexia how compound interest works`
 
 ## Before / after
 
@@ -92,9 +92,9 @@ Example: `/i-have-dyslexia explain how compound interest works`
 
 ## Turn it off
 
-`explain` is one time, so there is nothing to turn off.
+A one-time redraw or topic has nothing to turn off.
 
-For session mode, say **"stop dyslexia mode"**.
+For `on` mode, say **"stop dyslexia mode"**.
 
 ## Why pictures?
 
