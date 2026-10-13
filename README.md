@@ -60,7 +60,7 @@ Example: `/i-have-dyslexia how compound interest works`
 
 ### Before
 
-> Great question! So when you type a URL into your browser, a number of things happen behind the scenes. First, the browser needs to figure out the IP address of the server, which it does by asking a DNS server. Once it has the address, it opens a connection to the server, and then sends an HTTP request. The server processes that request, possibly talking to a database, and sends back a response, which the browser then renders into the page you see.
+> A transformer is a neural network that turns a sequence of tokens into a sequence of vectors. In each layer, every token looks at the other tokens and mixes in information from them, which is called attention. Each token's vector is projected three ways: a query (what the token is looking for), a key (what it offers to others) and a value (the information it passes along if selected). In "The cat sat because it was tired", the query for "it" scores highly against the key for "cat", so the output vector for "it" absorbs information about the cat. Stacking many such layers produces the contextual representations that models like GPT, LLaMA and BERT use.
 
 </td>
 <td width="50%">
@@ -68,23 +68,24 @@ Example: `/i-have-dyslexia how compound interest works`
 ### After
 
 ```
- You type URL
-      │
-      ▼
- DNS ──▶ finds the server's address
-      │
-      ▼
- Browser ──▶ Server ──▶ Database
-      ▲          │
-      └──────────┘
-       sends page back
+ Text ──▶ Tokens ──▶ Vectors
+                       │
+                       ▼
+               ┌── Layer × N ──┐
+               │   Attention   │
+               │   MLP         │
+               └───────────────┘
+                       │
+                       ▼
+                  Next token
 ```
 
-1. **DNS** is the internet's phone book.
-2. The **browser** asks the **server** for the page.
-3. The **server** gets data and sends the page back.
+1. **Attention:** each token looks at the other tokens.
+2. Example: "The cat sat because **it** was tired."
+   **it** ──▶ looks at **cat** ──▶ learns what "it" means.
+3. **Stack** many layers and you get GPT or LLaMA.
 
-**In short:** find the address, ask, get the page.
+**In short:** tokens look at each other, layer by layer, then guess the next word.
 
 </td>
 </tr>
