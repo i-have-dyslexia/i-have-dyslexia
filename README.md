@@ -6,6 +6,10 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/i-have-dyslexia/i-have-dyslexia?style=flat" alt="License"></a>
 </p>
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Demo: a long text answer about transformers, then /i-have-dyslexia redraws it with diagrams and short sentences" width="900">
+</p>
+
 ## Install
 
 In Claude Code:
