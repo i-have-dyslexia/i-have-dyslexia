@@ -11,7 +11,8 @@
 In Claude Code:
 
 ```text
-/plugin install i-have-dyslexia --marketplace i-have-dyslexia/i-have-dyslexia
+/plugin marketplace add i-have-dyslexia/i-have-dyslexia
+/plugin install i-have-dyslexia@i-have-dyslexia
 ```
 
 Or copy/paste into any AI coding tool:
