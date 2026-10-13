@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "i-have-dyslexia",
+  "description": "Explain with pictures, not walls of text. Visual-first, dyslexia-friendly output.",
+  "owner": {
+    "name": "i-have-dyslexia"
+  },
+  "plugins": [
+    {
+      "name": "i-have-dyslexia",
+      "description": "Visual-first, dyslexia-friendly explanations for Claude Code.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
